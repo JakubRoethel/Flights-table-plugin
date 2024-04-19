@@ -1,0 +1,25 @@
+{
+  "name": "flight-table",
+  "version": "1.0.0",
+  "description": "WordPress plugin for flight tables",
+  "main": "flight-table.php",
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jakub Roethel",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JakubRoethel/flight-table.git"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.1",
+    "node-sass": "^9.0.0",
+    "sass-loader": "^14.2.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
