@@ -1,11 +1,11 @@
-<strong>flights Table Plugin</strong>
+<strong>Flights Table Plugin</strong>
 
-Description
+<strong>Description</strong>
 
 flights Table Plugin is a simple WordPress plugin designed to display flight fare search results in a table format on a WordPress page. The plugin consumes a mock flight fare search API response provided in the flights.json file. It allows users to view flight details such as departure date, departure airport, destination airport, airline code, and price conveniently in a tabular layout.
 
 
-Installation
+<strong>Installation</strong>
 
 - Download the plugin zip file.
 
@@ -20,7 +20,7 @@ Installation
 - Once installed, click on "Activate Plugin".
 
 
-Usage
+<strong>Usage</strong>
 
 - After activating the plugin, create a new WordPress page where you want to display the flight fare search results.
 
@@ -31,7 +31,7 @@ Usage
 - Visit the page on the frontend to view the flight fare search results displayed in a table format.
 
 
-Configuration
+<strong>Configuration</strong>
 
 The flights Table Plugin provides the option to configure the API endpoint URL and its parameters via the WordPress admin panel. Follow the steps below to configure the plugin:
 
@@ -44,7 +44,7 @@ The flights Table Plugin provides the option to configure the API endpoint URL a
 - Click on "Save Changes" to update the settings.
 
 
-Future Evolution
+<strong>Future Evolution</strong>
 
 In the future, the flights Table Plugin could evolve in several ways to enhance its functionality and usability:
 
@@ -59,7 +59,7 @@ In the future, the flights Table Plugin could evolve in several ways to enhance 
 - Localization and Internationalization: Support localization and internationalization to make the plugin accessible to users from different regions and languages.
 
 
-Repository
+<strong>Repository</strong>
 
 The code for the flights Table Plugin is available on GitHub. You can access the repository here.
 For any issues, feature requests, or contributions, please feel free to open an issue or pull request on the repository.
