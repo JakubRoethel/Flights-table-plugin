@@ -1,7 +1,163 @@
+.flight-data {
+    display: inline;
+    min-width: 1000px;
+    margin: 0 auto;
 
+    .responsive-table {
+        padding: unset;
+        li {
+            padding: 25px 30px;
+            display: flex;
+            gap: 20px;
+            border: 1px solid #d3d3d3;
+            border-bottom: unset;
 
-.flights-table {
-    p {
-        background-color:red !important; 
+            &:nth-child(1) {
+                border-radius: 16px;
+            }
+
+            &:nth-child(2) {
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+            }
+
+            &:last-child {
+                border-bottom-left-radius: 16px;
+                border-bottom-right-radius: 16px;
+                border-bottom: 1px solid #d3d3d3;
+            }
+
+            [data-label="Departure date"] {
+                gap: 10px;
+                &::before {
+                    content: "";
+                    width: 15px;
+                    height: 15px;
+                    display: block;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-image: url("../assets/date.svg");
+                }
+            }
+
+            [data-label="Departure airport"] {
+                gap: 10px;
+                &::before {
+                    content: "";
+                    width: 40px;
+                    height: 40px;
+                    display: block;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-image: url("../assets/flight.svg");
+                }
+            }
+
+            [data-label="Destination airport"] {
+                gap: 10px;
+                &::before {
+                    content: "";
+                    width: 25px;
+                    height: 25px;
+                    display: block;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-image: url("../assets/flight_land.svg");
+                }
+            }
+
+            [data-label="Price"] {
+                font-weight: 600;
+                color: #dc3300;
+            }
+        }
+
+        .table-header {
+            background-color: #dc3300;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            font-weight: 600;
+            color: white;
+            font-family: "Source Sans Pro", sans-serif;
+            margin-bottom: 25px;
+            padding: 10px 30px;
+
+            .col {
+                border-right: unset;
+            }
+        }
+        .table-row {
+            background-color: #ffffff;
+
+            &:hover {
+                border-bottom: 1px solid #d3d3d3;
+                scale: 1.02;
+                border-radius: 16px;
+            }
+        }
+
+        .col {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-right: 1px solid #d3d3d3;
+        }
+
+        .col-1 {
+            flex-basis: 20%;
+        }
+        .col-2 {
+            flex-basis: 25%;
+        }
+        .col-3 {
+            flex-basis: 25%;
+        }
+        .col-4 {
+            flex-basis: 12%;
+        }
+        .col-5 {
+            flex-basis: 8%;
+            border-right: unset;
+        }
+
+        @media all and (max-width: 1200px) {
+            .table-header {
+                display: none;
+            }
+
+            .table-row {
+                display: block;
+                &:hover {
+
+                    border-bottom: unset;
+                    scale: unset;
+                    border-radius: unset;
+                }
+
+                .col {
+                    flex-basis: 100%;
+                    gap: 0px;
+                    justify-content: space-between;
+                    display: flex;
+                    padding: 10px 0;
+                    text-align: right;
+                    border: unset;
+                    &:before {
+                        width: auto !important;
+                        height: auto !important;
+                        color: #000;
+                        padding-right: 10px;
+                        content: attr(data-label) !important;
+                        flex-basis: 50%;
+                        text-align: left;
+                        background-image: unset !important;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
     }
 }
