@@ -23,7 +23,6 @@ function flights_table_shortcode($atts)
         $response = curl_exec($ch);
         $http_status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
-
         if ($http_status_code === 200) {
             curl_close($ch);
             $data = json_decode($response, true);
