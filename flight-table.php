@@ -13,6 +13,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Plugins:  my-plugin, yet-another-plugin
 */
 
+
 require_once(plugin_dir_path(__FILE__) . 'includes/flight-table-admin-menu.php');
 require_once(plugin_dir_path(__FILE__) . 'includes/flights-table-settings-page.php');
 require_once(plugin_dir_path(__FILE__) . 'includes/flight-table-shortcode.php');

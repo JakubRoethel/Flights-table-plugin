@@ -1,5 +1,5 @@
 {
-  "name": "flight-table",
+  "name": "flight-table-plugin",
   "version": "1.0.0",
   "description": "WordPress plugin for flight tables",
   "main": "flight-table.php",
